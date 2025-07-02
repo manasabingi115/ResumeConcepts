@@ -1,4 +1,4 @@
-**What is ECMAScript(European Computer Manufacturers Association)?**
+**What is ECMAScript (European Computer Manufacturers Association)?**
 
 **ECMAScript (ES)** is a **standardized scripting language specification** developed by **Ecma International** in the document ECMA-262. It serves as the **foundation for several scripting languages**, including JavaScript, JScript, and ActionScript. In essence, ECMAScript is the **official standard** that defines the core language rules, syntax, data types, and core Application Programming Interface (API) that JavaScript implementations must adhere to.
 
