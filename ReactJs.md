@@ -1,6 +1,6 @@
 **What is React.js?**
 
-React (also known as **React.js** or **ReactJS**) is a popular, open-source JavaScript library specifically designed for building **user interfaces (UIs)**. It's primarily used for developing dynamic and interactive web applications, particularly **single-page applications (SPAs)**. React simplifies UI development by adopting a **component-based approach**, where UIs are broken down into small, reusable pieces of code called **components**.
+React is a popular, open-source JavaScript library specifically designed for building **user interfaces (UIs)**. It's primarily used for developing dynamic and interactive web applications, particularly **single-page applications (SPAs)**. React simplifies UI development by adopting a **component-based approach**, where UIs are broken down into small, reusable pieces of code called **components**.
 
 **Problems Solved by React.js:**
 
