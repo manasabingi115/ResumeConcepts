@@ -40,6 +40,7 @@ React emerged to address several key challenges in traditional web development:
 *   **JSX:** A syntax extension that allows writing HTML-like code within JavaScript.
 *   **Hooks:** Functions that enable functional components to use state and lifecycle features.
 *   **Unidirectional Data Flow:** Data flows in a single direction, simplifying debugging.
+*   **Optimisation methods:** useMemo, useCallback, Lazyloading, ReactMemo
 
 By effectively leveraging these concepts, React makes it easier to build high-performance, maintainable, and scalable web applications.
 
