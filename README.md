@@ -57,7 +57,7 @@ Animations
 Azure fundamentals
 
 Array methods: 
-🔹 11. find() – Get the first match (same like filter() but return only first match)
+🔹 11. find() – Get the first match (same like filter() but return only first match of element)
 🔹 12. includes() – Check if value exists
 🔹 13. indexOf() – Find the index of a value
 🔹 14. lastIndexOf() – Find last index of a value
