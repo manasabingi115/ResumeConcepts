@@ -61,9 +61,9 @@ Array methods:
 🔹 12. includes() – Check if value exists
 🔹 13. indexOf() – Find the index of a value
 🔹 14. lastIndexOf() – Find last index of a value
-🔹 15. some() – Check if any element passes
+🔹 15. some() – Check if any element passes - true/false
 🔹 16. every() – Check if all elements pass
 🔹 17. sort() – Sort array items
 🔹 18. reverse() – Reverse the order
-🔹 19. flat() – Flatten nested arrays
+🔹 19. flat() – Flatten nested arrays, flat(Infinity)-to flat all the nested arrays 
 🔹 20. join() – Turn array into string
