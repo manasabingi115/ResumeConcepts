@@ -151,3 +151,47 @@ This code snippet demonstrates how to embed audio and video files using the `<au
 **How it works**: Elements are made draggable with the `draggable` attribute, and JavaScript event handlers manage the drag and drop process. The `dataTransfer` object handles the data being moved.
 
 **Real-time example**: Refer to external documentation for a simple drag and drop example with a draggable element and a dropzone, including JavaScript code to manage drag and drop events, prevent default behavior, and transfer data.
+
+
+
+
+
+
+
+# Semantic HTML5 Tags - Cheat Sheet
+
+This document lists the most commonly used semantic tags in HTML5 with brief descriptions.
+
+| Tag              | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `<header>`       | Represents introductory content or a group of navigational links. Usually placed at the top of a page or section. |
+| `<nav>`          | Defines navigation links. Typically used for main site or page navigation.  |
+| `<main>`         | Represents the dominant content of the `<body>`. There should be only one `<main>` per page. |
+| `<section>`      | Defines a standalone section of content that has a thematic grouping.       |
+| `<article>`      | Represents self-contained content (e.g., blog post, news article) that can be independently distributed. |
+| `<aside>`        | Contains content related to the main content, like sidebars or pull quotes. |
+| `<footer>`       | Defines a footer for a document or section. Often includes copyright, links, or related info. |
+| `<h1>`–`<h6>`    | Headings from most important (`<h1>`) to least important (`<h6>`). Helps structure content hierarchically. |
+| `<figure>`       | Represents self-contained media or illustrations, often used with `<figcaption>`. |
+| `<figcaption>`   | Provides a caption or description for the `<figure>` element.               |
+| `<address>`      | Defines contact information for the author or owner of the document.        |
+| `<time>`         | Represents a specific time or date, optionally machine-readable via `datetime`. |
+| `<mark>`         | Highlights text for reference or emphasis.                                 |
+| `<summary>`      | Defines a summary (visible heading) for a `<details>` element.              |
+| `<details>`      | Used to create an expandable disclosure widget for content visibility.      |
+| `<dialog>`       | Represents a dialog box or interactive popup.                              |
+| `<blockquote>`   | Used for quoting blocks of text from another source.                       |
+| `<cite>`         | Represents the title of a work (book, paper, movie, etc.).                  |
+| `<code>`         | Displays a fragment of computer code.                                      |
+| `<pre>`          | Displays preformatted text, preserving whitespace and line breaks.          |
+| `<kbd>`          | Represents user input via keyboard.                                         |
+| `<samp>`         | Denotes sample output from a computer program.                             |
+| `<output>`       | Represents the result of a calculation or user action.                     |
+| `<strong>`       | Indicates strong importance (usually rendered in bold).                     |
+| `<em>`           | Indicates emphasis (usually rendered in italic).                           |
+| `<abbr>`         | Represents an abbreviation or acronym, often with a title tooltip.         |
+| `<dfn>`          | Represents the defining instance of a term.                                |
+| `<var>`          | Represents a variable in a mathematical expression or programming context.  |
+| `<progress>`     | Displays a progress bar.                                                    |
+| `<meter>`        | Represents a scalar measurement within a known range.                      |
+
