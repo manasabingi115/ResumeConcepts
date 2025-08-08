@@ -44,3 +44,12 @@ Next.js leverages several techniques to provide a powerful and optimized develop
 *   **Caching:** Mechanisms to store rendered results and data for reuse.
 
 Next.js provides a robust and comprehensive framework for building modern, high-performance, and SEO-friendly web applications with React. By understanding its key features and rendering strategies, developers can optimize applications for both performance and user experience.
+
+
+
+| Method | Function Used          | Runs When?       | SEO?      | Use Case                   |
+| ------ | ---------------------- | ---------------- | --------- | -------------------------- |
+| CSR    | `useEffect()`          | After page load  | ❌ Not SEO | Dashboards, internal tools |
+| SSR    | `getServerSideProps()` | On every request | ✅ Yes     | Auth pages, dynamic SEO    |
+| SSG    | `getStaticProps()`     | At build time    | ✅ Yes     | Blogs, docs, marketing     |
+
