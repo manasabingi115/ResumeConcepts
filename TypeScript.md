@@ -50,6 +50,157 @@ A large-scale application is not just about size — it’s about how well your 
 
 **Scalability** - Scalability means your app can grow without becoming slow, unstable, or difficult to maintain.
 
+---
+
+
+# Type Declarations in TypeScript
+
+Here are the different ways we can declare types in TypeScript:
+
+---
+
+## 1. Primitive Types
+```ts
+let age: number = 25;
+let name: string = "Manasa";
+let isActive: boolean = true;
+```
+
+---
+
+## 2. Array Types
+```ts
+let numbers: number[] = [1, 2, 3];       // square bracket syntax
+let numbers2: Array<number> = [1, 2, 3]; // generic syntax
+```
+
+---
+
+## 3. Tuple Types
+```ts
+let person: [string, number] = ["Manasa", 25];
+```
+
+---
+
+## 4. Object Types
+```ts
+let user: { name: string; age: number } = {
+  name: "Manasa",
+  age: 25
+};
+```
+
+---
+
+## 5. Any Type
+```ts
+let data: any = "Hello";
+data = 123; // allowed
+```
+
+---
+
+## 6. Unknown Type
+```ts
+let input: unknown = "Hi";
+```
+
+---
+
+## 7. Union Types
+```ts
+let id: string | number;
+id = "123";
+id = 123;
+```
+
+---
+
+## 8. Intersection Types
+```ts
+type A = { name: string };
+type B = { age: number };
+type C = A & B;
+
+let user: C = { name: "Manasa", age: 25 };
+```
+
+---
+
+## 9. Type Aliases
+```ts
+type ID = string | number;
+let empId: ID = 101;
+```
+
+---
+
+## 10. Interfaces
+```ts
+interface User {
+  name: string;
+  age: number;
+}
+let u: User = { name: "Manasa", age: 25 };
+```
+
+---
+
+## 11. Enums
+```ts
+enum Role {
+  Admin,
+  User,
+  Guest
+}
+let myRole: Role = Role.Admin;
+```
+
+---
+
+## 12. Literal Types
+```ts
+let direction: "up" | "down";
+direction = "up"; // ✅
+```
+
+---
+
+# Type vs Interface in TypeScript
+
+| Feature / Use Case               | **type**                                                                 | **interface**                                                                 |
+|----------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Basic Purpose**                | Create **aliases** for primitives, objects, unions, intersections, etc.  | Define the **shape of objects**, contracts, or class blueprints.              |
+| **Objects**                      | Can define object shapes.                                                 | Can define object shapes.                                                     |
+| **Primitives**                   | ✅ Can alias primitives (`type ID = number`).                             | ❌ Cannot alias primitives.                                                   |
+| **Union / Intersection**         | ✅ Supports unions & intersections (`type X = A | B`).                    | ❌ Does not support unions directly.                                          |
+| **Extending**                    | ✅ Extend via intersections (`type X = A & B`).                           | ✅ Extend via `extends` keyword.                                              |
+| **Declaration Merging**          | ❌ Not supported.                                                         | ✅ Supported (multiple interfaces with same name merge).                      |
+| **Implements (Classes)**         | ✅ Can be used in `implements`.                                           | ✅ Can be used in `implements`.                                               |
+| **Mapped/Utility Types**         | ✅ Works well (`Partial<T>`, `Pick<T>`).                                  | ❌ Not designed for this.                                                     |
+| **Readability in Large Projects**| Great for **internal helpers** and unions.                                | Great for **public APIs** and extensible models.                              |
+| **Performance (TS Compiler)**    | Slightly better optimized for unions & advanced types.                    | Optimized for large object models and declaration merging.                    |
+| **When to Use?**                 | - For **flexibility** (unions, intersections).<br>- When aliasing primitives. | - For **contracts, models, public APIs**.<br>- When extensibility is needed. |
+
+---
+
+### 🔑 Quick Takeaway
+- Use **`type`** when you need **flexibility** (unions, intersections, aliases, utility types).  
+- Use **`interface`** when you want to define **structured object shapes** that may be extended/merged.  
+
+---
+
+## 13. Generics
+```ts
+function identity<T>(value: T): T {
+  return value;
+}
+let output = identity<number>(100);
+```
+
+---
+
 ## Generics:
 
 # What are Generics in TypeScript?
